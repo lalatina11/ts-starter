@@ -2,6 +2,7 @@ import { signOut } from "@/lib/authClient";
 import { Button } from "./ui/button";
 import { useRouter } from "@tanstack/react-router";
 import { toast } from "sonner";
+import { LogOut } from "lucide-react";
 
 const SignOutButton = () => {
   const router = useRouter();
@@ -26,7 +27,7 @@ const SignOutButton = () => {
   };
   return (
     <Button onClick={handleSignOut} className="w-fit" variant="destructive">
-      Logout
+      <LogOut /> Logout
     </Button>
   );
 };
