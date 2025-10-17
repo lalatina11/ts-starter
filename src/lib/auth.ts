@@ -9,7 +9,7 @@ export const auth = betterAuth({
     provider: "pg", // or "mysql", "sqlite"
   }),
   emailAndPassword: {
-    enabled: false,
+    enabled: true,
   },
   socialProviders: {
     github: {
@@ -17,5 +17,10 @@ export const auth = betterAuth({
       clientId: process.env.GITHUB_CLIENT_ID || "",
       clientSecret: process.env.GITHUB_CLIENT_SECRET || "",
     },
+    google: {
+      enabled: true,
+      clientId: "",
+      clientSecret: ""
+    }
   },
 });
