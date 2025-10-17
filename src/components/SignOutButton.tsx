@@ -25,7 +25,7 @@ const SignOutButton = () => {
     });
   };
   return (
-    <Button onClick={handleSignOut} variant="destructive">
+    <Button onClick={handleSignOut} className="w-fit" variant="destructive">
       Logout
     </Button>
   );
